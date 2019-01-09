@@ -102,6 +102,6 @@ whevent.onPriority = whevent.bindPriority;
 whevent.onOncePriority = whevent.bindOncePriority;
 whevent.emit = whevent.call;
 
-if(module){
+if(typeof module !== 'undefined'){
 	module.exports = whevent;
 }
