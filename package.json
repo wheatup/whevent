@@ -1,5 +1,5 @@
 {
-	"name": "wheen",
+	"name": "whevent",
 	"version": "2.0.4",
 	"description": "A lite event system",
 	"main": "index.js",
