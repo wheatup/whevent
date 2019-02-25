@@ -42,10 +42,10 @@ var whevent = {
 	},
 
 	// unbind the event
-	unbind: function(signal, func){
+	unbind: function(signal, func, self){
 		if(!this._callStacks[signal]){return;}
 		for(var i = 0; i < this._callStacks[signal].length; i++){
-			if(this._callStacks[signal][i].func === func){
+			if(this._callStacks[signal][i].func === func && (!self || this._callStacks[signal][i].self === self)){
 				this._callStacks[signal].splice(i, 1);
 				return;
 			}
@@ -81,7 +81,9 @@ var whevent = {
 		for(var i = 0; i < eves.length; i++){
 			if(eves[i].func){
 				eves[i].func.call(eves[i].self, data);
-				eves[i]._processed = true;
+				if(eves[i]){
+					eves[i]._processed = true;
+				}
 			}
 			if(eves[i].once){
 				eves.splice(i, 1);

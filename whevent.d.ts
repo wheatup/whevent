@@ -75,16 +75,18 @@ declare module whevent {
 	 * Destroy the binding between given signal and function.
 	 * @param signal Signal
 	 * @param func Function
+	 * @param self This boject
 	 */
 	@deprecated
-	export function unbind(signal: string, func: function);
+	export function unbind(signal: string, func: function, self?: any);
 
 	/**
 	 * Destroy the binding between given signal and function.
 	 * @param signal Signal
 	 * @param func Function
+	 * @param self This boject
 	 */
-	export function off(signal: string, func: function);
+	export function off(signal: string, func: function, self?: any);
 
 	/**
 	 * Destroy a signal, all bindings with this signal will be destroyed.
