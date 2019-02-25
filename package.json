@@ -1,64 +1,25 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "whevent",
-        "scope": null,
-        "escapedName": "whevent",
-        "name": null,
-        "rawSpec": "whevent",
-        "spec": "D:\\Projects\\MyProject\\Nodejs\\playground\\whevent",
-        "type": "directory"
-      },
-      "D:\\Projects\\MyProject\\Nodejs\\playground"
-    ]
-  ],
-  "_from": "whevent",
-  "_id": "whevent@1.0.2",
-  "_inCache": true,
-  "_location": "/whevent",
-  "_phantomChildren": {},
-  "_requested": {
-    "raw": "whevent",
-    "scope": null,
-    "escapedName": "whevent",
-    "name": null,
-    "rawSpec": "whevent",
-    "spec": "D:\\Projects\\MyProject\\Nodejs\\playground\\whevent",
-    "type": "directory"
-  },
-  "_requiredBy": [
-    "#USER"
-  ],
-  "_resolved": "file:whevent",
-  "_shasum": "222b42cb752c742421d744fe2da58e1d725964b6",
-  "_shrinkwrap": null,
-  "_spec": "whevent",
-  "_where": "D:\\Projects\\MyProject\\Nodejs\\playground",
-  "author": {
-    "name": "wheatup"
-  },
-  "dependencies": {},
-  "description": "A simple event system.",
-  "devDependencies": {},
-  "keywords": [
-    "event",
-    "listener",
-    "emit",
-    "event system",
-    "lite",
-    "singleton",
-    "sync",
-    "blocking",
-    "whevent"
-  ],
-  "license": "ISC",
-  "main": "index.js",
-  "name": "whevent",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
-  "scripts": {
-    "test": "debugMode = true;"
-  },
-  "version": "2.0.3"
+	"name": "wheen",
+	"version": "2.0.3",
+	"description": "A lite event system",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"event",
+		"listener",
+		"emit",
+		"event system",
+		"lite", 
+		"singleton", 
+		"sync", 
+		"blocking"
+	],
+	"author": "wheatup",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/wheatup/whevent.git"
+	}
 }
