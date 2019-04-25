@@ -102,6 +102,7 @@ whevent.on = whevent.bind;
 whevent.onOnce = whevent.bindOnce;
 whevent.onPriority = whevent.bindPriority;
 whevent.onOncePriority = whevent.bindOncePriority;
+whevent.off = whevent.unbind;
 whevent.emit = whevent.call;
 
 if(typeof module !== 'undefined'){
