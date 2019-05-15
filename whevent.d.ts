@@ -99,11 +99,11 @@ declare module whevent {
 	 * @param signal Signal
 	 */
 	@deprecated
-	export function call(signal: string, data?: any);
+	export function call(signal: string, ...data: any);
 
 	/**
 	 * Broadcast a signal, triggers all binded functions.
 	 * @param signal Signal
 	 */
-	export function emit(signal: string, data?: any);
+	export function emit(signal: string, ...data: any);
 }

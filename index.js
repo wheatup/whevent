@@ -62,12 +62,12 @@ var whevent = {
 	},
 
 	// dispatch the event
-	call: function(signal, data){
+	call: function(signal, ...data){
 		if(this.debugMode){
 			if(!this.logger){
 				this.logger = console.log;
 			}
-			this.logger('CALL: ' + signal, data);
+			this.logger('CALL: ' + signal, ...data);
 		}
 		if(this.lastEvent){
 			this.lastEvent.signal = signal;
@@ -80,7 +80,7 @@ var whevent = {
 		var eves = this._callStacks[signal];
 		for(var i = 0; i < eves.length; i++){
 			if(eves[i].func){
-				eves[i].func.call(eves[i].self, data);
+				eves[i].func.call(eves[i].self, ...data);
 				if(eves[i]){
 					eves[i]._processed = true;
 				}
