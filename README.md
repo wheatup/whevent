@@ -29,7 +29,7 @@ whevent.emit('SPEAK', 'Hello!');
 whevent.off('SPEAK', function1);
 
 // Unbind all the binded functions associated with the listener
-whevent.offBy(listener);
+whevent.offBy(this);
 
 // Destory the signal, all bindings will be destroyed
 whevent.destroy('SPEAK');
