@@ -61,7 +61,7 @@ var whevent = (function () {
 				if (!this.logger) {
 					this.logger = console.log;
 				}
-				this.logger('CALL: ' + signal, ...data);
+				this.logger('CALL', signal, ...data);
 			}
 
 			if (!this._callStacks[signal]) { return; }
