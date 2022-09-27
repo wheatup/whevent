@@ -9,7 +9,7 @@ Usage
 -----
 
 ```js
-var udfEvent = require('udfEvent');
+var udfEvent = require('udf-event');
 
 // Bind the signal with the event function: udfEvent.bind(signal, func, context);
 udfEvent.on('SPEAK', function1, this);
