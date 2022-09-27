@@ -1,5 +1,5 @@
 {
-	"name": "whevent",
+	"name": "udf-event",
 	"version": "2.1.1",
 	"description": "A lite event system",
 	"main": "index.js",

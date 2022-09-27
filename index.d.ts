@@ -1,4 +1,4 @@
-declare module whevent {
+declare module udfEvent {
 	export var debugMode: boolean;
 
 	export var logger: function;

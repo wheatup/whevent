@@ -1,5 +1,5 @@
-var whevent = (function () {
-	const whevent = {
+var udfEvent = (function () {
+	const udfEvent = {
 		debugMode: false,
 		logger: null,
 		_callStacks: {},
@@ -86,17 +86,17 @@ var whevent = (function () {
 	};
 
 	// Aliases
-	whevent.on = whevent.bind;
-	whevent.onOnce = whevent.bindOnce;
-	whevent.onPriority = whevent.bindPriority;
-	whevent.onOncePriority = whevent.bindOncePriority;
-	whevent.off = whevent.unbind;
-	whevent.offBy= whevent.unbindBy;
-	whevent.emit = whevent.call;
+	udfEvent.on = udfEvent.bind;
+	udfEvent.onOnce = udfEvent.bindOnce;
+	udfEvent.onPriority = udfEvent.bindPriority;
+	udfEvent.onOncePriority = udfEvent.bindOncePriority;
+	udfEvent.off = udfEvent.unbind;
+	udfEvent.offBy= udfEvent.unbindBy;
+	udfEvent.emit = udfEvent.call;
 
 	if (typeof module !== 'undefined') {
-		module.exports = whevent;
+		module.exports = udfEvent;
 	}
 
-	return whevent;
+	return udfEvent;
 })();
